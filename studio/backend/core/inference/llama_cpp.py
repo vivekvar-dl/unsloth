@@ -826,8 +826,7 @@ class LlamaCppBackend:
                 logger.info("Load cancelled before server start")
                 return False
 
-            #self._port = self._find_free_port()
-            self._port = 8001
+            self._port = self._find_free_port()
 
             # Select GPU(s) based on model size and free memory
             try:
